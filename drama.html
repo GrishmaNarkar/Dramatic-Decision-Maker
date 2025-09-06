@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Meddon&family=Sancreek&family=Staatliches&family=Stint+Ultra+Condensed&family=Ultra&display=swap" rel="stylesheet">
+  <title>Dramatic Decision Maker ✨</title>
+  <style>
+
+    .sancreek-regular {
+  font-family: "Sancreek", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ultra-regular {
+  font-family: "Ultra", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+    body {
+      background: #f9f6e1;;
+      text-align: center;
+      padding-top: 100px;
+      color: #333;
+      align-items: center;
+      border: 15px solid  rgb(170, 238, 162); 
+      
+      padding: 10px; 
+      margin: 20px;
+    }
+
+    h1 {
+      margin: 0px;
+      top: auto;
+      padding: 0px;
+      text-align: center;
+      font-size: 90px;
+      font-family: sancreek, serif;
+      color: #e54246;
+      text-shadow: 4px -3px 1px #eea8a8fd;
+      
+    }
+    h2{
+      margin: 0px;
+      top: auto;
+      padding: 0px;
+      text-align: center;
+      font-size: 60px;
+      font-family: Instrument serif, sans-serif;
+      color:#e82e83;
+      text-shadow: -3px -1px 1px #ffb3d5;
+    }
+
+    button {
+      background-color: #5ce1e6;
+      color: rgb(135, 46, 195);
+      border: none;
+      margin-top: 60PX;
+      padding: 15px 35px;
+      font-size: 27PX;
+      border-radius: 42px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+   .result {
+      font-family: ultra, serif;
+      margin: 40px auto 0;
+      font-size: 45px;
+      font-weight: bold;
+      border-radius: 16px;
+      margin-bottom: 200px;
+      color: #ff479a;
+      padding: 12px 24px;
+      width: fit-content;
+      text-shadow: #f1e7b1c1 3px 4px 5px;
+      animation: fadeIn 0.6s ease-in-out, sparkle 1.5s infinite ease-in-out;
+    }
+
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- <img src="logo.png" alt="Dramatic Decision Maker Logo" width="600" height="200" align-item="center"> -->
+  <h1> Dramatic </h1>
+  <h2>DECISIONS</h2>
+  <button onclick="makeDecision()"> <B>LET'S GO!!</B></button>
+  <div class="result" id="result"> Your Decision is...</div>
+
+  <script>
+const options = [
+  "yes",
+  "no",
+  "maybe",
+  "maybe not",
+  "definitely no",
+  "GURL YEAH",
+  "NOOO",
+  "YES OMG ARE U SERIOUS",
+  "ask again later",
+  "absolutely",
+  "not in a million years",
+  "the stars say yes",
+  "the stars say no",
+  "it is certain",
+  "very doubtful",
+  "without a doubt",
+  "better not tell you now",
+  "concentrate and ask again",
+  "YOU ONLY LIVE ONCE",
+  "UHM..NO?",
+  "ofcourse!!!",
+  "not today, darling",
+  "YES but with consequences",
+  "NO and don't ask again",
+  "the vibes say maybe",
+  "NO unless you're wearing glitter",
+  "ask your cat",
+  "YES but chaos will follow",
+  "the stars are laughing",
+  "YES but it’s a trap",
+  "some other time",
+  "HECK YES, let’s gooo!",
+  "YES queen, slay it!",
+  "NO and that’s final",
+  "YES if you believe in magic",
+  "NOPE. Not happening.",
+  "Denied by the universe.",
+  "Negative. Absolutely not.",
+  "NO but nice try.",
+  "YES, stars are cheering for you.",
+  "YES, fate sealed the deal.",
+  "YES, the drama demands it!",
+  "NO. Just... no.",
+  "NO unless you're a time traveler",
+  "YES only if you are a pig :)",
+  "YES only if you are a unicorn :P",
+  "YES if you are a mermaid :D",
+  "YES and the universe approves.",
+  "YES OMG, no doubts at all.",
+  "Not even with glitter.",
+  "NO unless pigs fly.",
+  "NO and the stars agree.",
+  "YES, destiny says so.",
+  "YAAASSS, it’s happening!",
+  "YES, 1000% yes!",
+  "YES, green lights everywhere.",
+  "YES, your time is now.",
+  "YES, nothing can stop you!"
+];
+
+
+    function makeDecision() {
+      const choice = options[Math.floor(Math.random() * options.length)];
+      const resultDiv = document.getElementById("result");
+      resultDiv.textContent = `✨ ${choice} ✨`;
+    }
+  </script>
+</body>
+</html>
